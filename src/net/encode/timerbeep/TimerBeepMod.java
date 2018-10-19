@@ -20,7 +20,7 @@ public class TimerBeepMod implements WurmClientMod, Initable, Configurable{
 	@Override
 	public void configure(Properties properties) {
 		this.enabled = Boolean.valueOf(properties.getProperty("enabled", Boolean.toString(this.enabled)));
-		
+		this.sound = properties.getProperty("sound", this.sound);
 	}
 
 	@Override
